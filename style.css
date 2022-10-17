@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+
+/*NAV*/
+nav, ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 20px;
+}
+ul.links {
+    gap: 30px;
+}
+li.link{
+    color: #114185;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 2s ease-in 1;
+}
+li.link:visited{
+    color: #000;
+}
+li.link:hover{
+    color: #0e0e0e;
+    border-bottom: 2px solid #fe6c17;
+}
+li.link.active{
+    color: #fe6c17;
+}
+
+nav li{
+    list-style-type: none;
+    cursor: pointer;
+}
+div.header-logo {
+    background-image: url(./access-logo.svg);
+    background-size: cover;
+    width: 130px;
+    height: 50px;
+    background-position: center;
+}
+
+
+section#hero-sect{
+    height: 60vh;
+}
