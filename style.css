@@ -21,6 +21,9 @@ nav,section,footer{
     max-width: 1440px;
     margin: auto;
 }
+button{
+    cursor:pointer;
+}
 
 /*NAV*/
 nav, ul {
@@ -85,6 +88,12 @@ button.hero-button {
     background-color: #ee7e01;
     color: #fff;
     border-radius: 3px;
+    font-size:1.5rem;
+}
+button.hero-button:hover{
+    box-shadow: 1px 5px 6px 0px #c8c1c1;
+    background-color: #23242f;
+    transition: 1s ease .5s;
 }
 div.flex-wrapper{
     display: flex;
