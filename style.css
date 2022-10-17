@@ -126,7 +126,7 @@ div.flex-wrapper{
 /*EXPLORE SECT*/
 #explore-sect{
     gap: 50px;
-    height: 60vh;
+    min-height: 60vh;
     max-width: 1440px;
 }
 h2.header2 {
@@ -162,9 +162,25 @@ h2.header2 {
 }
 
 
+/*TESTIMONIAl_SECT*/
+#testimonial-sect {
+    background-color: #242424;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testimonial-sect div {
+    line-height: 40px;
+}
+#testimonial-sect div span em {
+    color: #eee;
+}
+
 /*CTA-SECT*/
 .cta-flex p,.cta-flex h3{
     color:white;
+    max-width: 1440px;
 }
 .cta-flex {
     padding: 7% 4%;
@@ -201,4 +217,14 @@ footer {
     background: #d2cfcf47;
     padding: 3%;
     font-size: 1.3rem;
+}
+section#testimonial-sect {
+    background-color: #242424;
+    color: white;
+}
+#testimonial-sect div{
+    color:inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    max-width: 39ch;
 }
