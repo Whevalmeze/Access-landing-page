@@ -7,6 +7,7 @@
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
 }
 img{
     width: 100%;
@@ -16,7 +17,10 @@ section{
     flex-direction: column;
     padding: 5%;
 }
-
+nav,section,footer{
+    max-width: 1440px;
+    margin: auto;
+}
 
 /*NAV*/
 nav, ul {
@@ -24,7 +28,10 @@ nav, ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 12px 20px;
+    padding: 10px 50px;
+}
+nav{
+    box-shadow: 0px 1px 7px #eee;
 }
 ul.links {
     gap: 30px;
@@ -58,7 +65,22 @@ div.header-logo {
     background-position: center;
 }
 
-
+/*HERO SECTION*/
+h1.hero-header {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+p.hero-paragraph {
+    font-size: 1.2rem;
+}
 section#hero-sect{
     height: 60vh;
+}
+button.hero-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #ee7e01;
+    color: #fff;
+    border-radius: 3px;
 }
