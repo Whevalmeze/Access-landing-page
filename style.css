@@ -18,7 +18,7 @@ section{
     padding: 5%;
 }
 nav,section,footer{
-    max-width: 1440px;
+
     margin: auto;
 }
 button{
@@ -39,11 +39,11 @@ nav{
 ul.links {
     gap: 30px;
 }
-li.link{
+li.link {
     color: #114185;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
-    transition: 2s ease-in 1;
+    transition: .1s ease-in 0s;
 }
 li.link:visited{
     color: #000;
@@ -61,7 +61,7 @@ nav li{
     cursor: pointer;
 }
 div.header-logo {
-    background-image: url(./access-logo.svg);
+    background-image: url(./images/access-logo.svg);
     background-size: cover;
     width: 130px;
     height: 50px;
@@ -79,16 +79,16 @@ p.hero-paragraph {
 }
 section#hero-sect {
     height: 99vh;
-    border-bottom: 1vh solid #eee;
     max-height: 900px;
+    background: #fe99174f;
 }
 button.hero-button {
     border: none;
-    padding: 20px 40px;
+    padding: 17px 30px;
     background-color: #ee7e01;
     color: #fff;
-    border-radius: 3px;
-    font-size:1.5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
 }
 button.hero-button:hover{
     box-shadow: 1px 5px 6px 0px #c8c1c1;
@@ -102,6 +102,7 @@ div.flex-wrapper{
     width: inherit;
     justify-content: space-between;
     column-gap: 50px;
+
 }
 .wrapper {
     flex: 1 1 0;
@@ -111,7 +112,7 @@ div.flex-wrapper{
     gap: 20px;
 }
 #wrapper-with-bg {
-    background-image: url(./image-1.jpg);
+    background-image: url(./images/image-1.png);
     background-size: cover;
     background-position: top;
     height: 100%;
@@ -122,9 +123,82 @@ div.flex-wrapper{
     border-top-style: hidden;
 }
 
-/*SECTION 2*/
+/*EXPLORE SECT*/
+#explore-sect{
+    gap: 50px;
+    height: 60vh;
+    max-width: 1440px;
+}
 h2.header2 {
     font-size: 2rem;
     border-bottom: 2px solid #d2cfcf;
     padding-bottom: 14px;
+}
+
+.flex-item .img.img1{
+    background-image: url(./images/kid-saving-iStock-909850310.jpg);
+}
+.flex-item .img.img2{
+    background-image: url(./images/istockphoto-1145371340-612x612.jpg);
+}
+.flex-item .img.img3{
+    background-image: url(./images/digital-banking-inset.png);
+}
+.flex-item .img.img4{
+    background-image: url(./images/banking.jpg);
+}
+.flex-item .img{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    border-radius: 5px;
+}
+.flex-item{
+    display: inherit;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/*CTA-SECT*/
+.cta-flex p,.cta-flex h3{
+    color:white;
+}
+.cta-flex {
+    padding: 7% 4%;
+    background-color: #fe6c18eb;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-1 {
+    gap: 11px;
+    display: inherit;
+    flex-direction: column;
+}
+.flex-2 .cta-btn {
+    border: none;
+    padding: 20px 24px;
+    background-color: #fff;
+    color: #161616;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 200px;
+}
+button.hero-button:hover{
+    box-shadow: 1px 5px 6px 0px #c8c1c1;
+    background-color: #23242f;
+    transition: 1s ease .5s;
+}
+
+/*FOOTER*/
+footer {
+    background: #d2cfcf47;
+    padding: 3%;
+    font-size: 1.3rem;
 }
