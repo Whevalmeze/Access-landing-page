@@ -74,13 +74,48 @@ h1.hero-header {
 p.hero-paragraph {
     font-size: 1.2rem;
 }
-section#hero-sect{
-    height: 60vh;
+section#hero-sect {
+    height: 99vh;
+    border-bottom: 1vh solid #eee;
+    max-height: 900px;
 }
 button.hero-button {
     border: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #ee7e01;
     color: #fff;
     border-radius: 3px;
+}
+div.flex-wrapper{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.wrapper {
+    flex: 1 1 0;
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+#wrapper-with-bg {
+    background-image: url(./image-1.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    background-repeat: no-repeat;
+    border: 10px solid #ff9800;
+    border-style: dashed;
+    border-left-style: hidden;
+    border-top-style: hidden;
+}
+
+/*SECTION 2*/
+h2.header2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #d2cfcf;
+    padding-bottom: 14px;
 }
